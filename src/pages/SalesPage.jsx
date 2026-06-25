@@ -8,58 +8,58 @@ export default function SalesPage() {
     {
       id: 1,
       title: 'Sales Fundamentals',
-      description: 'Master the core principles of modern sales',
+      description: 'Опануйте основні принципи сучасних продажів',
       instructor: 'Sarah Johnson',
       rating: 4.8,
       students: 2340,
       duration: '4 weeks',
-      level: 'Beginner',
+      level: 'Початковий',
       price: '$49',
       image: '📊',
     },
     {
       id: 2,
       title: 'Advanced Negotiation',
-      description: 'Close deals with confidence and strategic skills',
+      description: 'Завершуйте угоди з упевненістю та стратегічними навичками',
       instructor: 'Michael Chen',
       rating: 4.9,
       students: 1890,
       duration: '5 weeks',
-      level: 'Intermediate',
+      level: 'Середній',
       price: '$79',
       image: '🤝',
     },
     {
       id: 3,
       title: 'Customer Relationship Management',
-      description: 'Build lasting relationships that drive growth',
+      description: 'Будуйте довготривалі стосунки, що стимулюють зростання',
       instructor: 'Emma Wilson',
       rating: 4.7,
       students: 1560,
       duration: '6 weeks',
-      level: 'Intermediate',
+      level: 'Середній',
       price: '$89',
       image: '❤️',
     },
     {
       id: 4,
       title: 'Digital Sales Strategies',
-      description: 'Leverage modern tools for B2B and B2C sales',
+      description: 'Використовуйте сучасні інструменти для B2B та B2C продажів',
       instructor: 'Alex Martinez',
       rating: 4.9,
       students: 3120,
       duration: '4 weeks',
-      level: 'Advanced',
+      level: 'Професійний',
       price: '$99',
       image: '💻',
     },
   ];
 
   const stats = [
-    { icon: Users, label: 'Active Learners', value: '50K+' },
-    { icon: Award, label: 'Certifications', value: '15K+' },
-    { icon: TrendingUp, label: 'Success Rate', value: '94%' },
-    { icon: BookOpen, label: 'Courses', value: '25+' },
+    { icon: Users, label: 'Активні студенти', value: '50K+' },
+    { icon: Award, label: 'Сертифікації', value: '15K+' },
+    { icon: TrendingUp, label: 'Рівень успіху', value: '94%' },
+    { icon: BookOpen, label: 'Курси', value: '25+' },
   ];
 
   return (
@@ -70,10 +70,10 @@ export default function SalesPage() {
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
               <Target className="w-8 h-8 text-indigo-600" />
-              <h1 className="text-2xl font-bold text-gray-900">Sales Academy</h1>
+              <h1 className="text-2xl font-bold text-gray-900">Академія продажів</h1>
             </div>
             <button className="px-6 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition">
-              Sign In
+              Увійти
             </button>
           </div>
         </div>
@@ -83,14 +83,14 @@ export default function SalesPage() {
       <section className="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
-            Master Modern Sales Excellence
+            Опануйте сучасне мистецтво продажів
           </h2>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Learn from industry experts and transform your sales career with hands-on courses, real-world strategies, and certifications.
+            Навчайтеся у експертів галузі та змініть свою кар'єру продавця за допомогою практичних курсів, реальних стратегій і сертифікацій.
           </p>
           <button className="inline-flex items-center space-x-2 px-8 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition font-medium">
             <Play className="w-5 h-5" />
-            <span>Start Learning Today</span>
+            <span>Почати навчання сьогодні</span>
           </button>
         </div>
 
@@ -112,8 +112,8 @@ export default function SalesPage() {
       {/* Courses Section */}
       <section className="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
         <div className="mb-12">
-          <h3 className="text-3xl font-bold text-gray-900 mb-4">Featured Courses</h3>
-          <p className="text-gray-600">Curated learning paths for sales professionals at every level</p>
+          <h3 className="text-3xl font-bold text-gray-900 mb-4">Рекомендовані курси</h3>
+          <p className="text-gray-600">Відібрані навчальні програми для професіоналів з продажу на будь-якому рівні</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -125,6 +125,7 @@ export default function SalesPage() {
                 selectedCourse === course.id ? 'ring-2 ring-indigo-600' : ''
               }`}
             >
+
               <div className="p-6">
                 <div className="text-5xl mb-4">{course.image}</div>
                 <span className="inline-block px-3 py-1 bg-blue-100 text-blue-800 text-xs font-semibold rounded-full mb-3">
@@ -134,13 +135,13 @@ export default function SalesPage() {
                 <p className="text-sm text-gray-600 mb-4">{course.description}</p>
 
                 <div className="border-t border-gray-100 pt-4 mb-4">
-                  <p className="text-xs text-gray-500 mb-3">Instructor: {course.instructor}</p>
+                  <p className="text-xs text-gray-500 mb-3">Викладач: {course.instructor}</p>
                   <div className="flex items-center justify-between text-xs text-gray-600 mb-3">
                     <span className="flex items-center">
                       <Star className="w-3 h-3 fill-yellow-400 text-yellow-400 mr-1" />
                       {course.rating}
                     </span>
-                    <span>{course.students} students</span>
+                    <span>{course.students} студентів</span>
                   </div>
                   <p className="text-gray-500">{course.duration}</p>
                 </div>
@@ -148,7 +149,7 @@ export default function SalesPage() {
                 <div className="flex items-center justify-between">
                   <span className="text-xl font-bold text-gray-900">{course.price}</span>
                   <button className="px-4 py-2 bg-indigo-600 text-white text-sm rounded-lg hover:bg-indigo-700 transition">
-                    Enroll
+                    Записатися
                   </button>
                 </div>
               </div>
@@ -160,12 +161,12 @@ export default function SalesPage() {
       {/* CTA Section */}
       <section className="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8 mb-8">
         <div className="bg-gradient-to-r from-indigo-600 to-blue-600 rounded-lg p-12 text-center text-white">
-          <h3 className="text-3xl font-bold mb-4">Ready to Advance Your Sales Career?</h3>
+          <h3 className="text-3xl font-bold mb-4">Готові підняти свою кар'єру в продажах?</h3>
           <p className="text-lg mb-8 opacity-90">
-            Join thousands of sales professionals who have transformed their careers with our courses.
+            Приєднуйтесь до тисяч фахівців з продажу, які змінили свої кар'єри за допомогою наших курсів.
           </p>
           <button className="px-8 py-3 bg-white text-indigo-600 rounded-lg font-semibold hover:bg-gray-100 transition">
-            Explore All Courses
+            Переглянути всі курси
           </button>
         </div>
       </section>
