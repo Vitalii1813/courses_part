@@ -1,0 +1,92 @@
+.track-section {
+  padding: 4rem 1rem;
+  background: linear-gradient(180deg, #0c1220 0%, #141b30 100%);
+  color: #f4f7ff;
+}
+
+.track-section__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.track-section__header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 2.5rem;
+}
+
+.track-section__title {
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  line-height: 1.05;
+  margin: 0;
+}
+
+.track-section__subtitle {
+  max-width: 690px;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #c4d0ff;
+}
+
+.track-section__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.track-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 1.25rem;
+  padding: 1.75rem;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.track-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(96, 165, 250, 0.45);
+  box-shadow: 0 20px 60px rgba(15, 23, 42, 0.3);
+}
+
+.track-card__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.track-card__description {
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: #d0d9ff;
+  margin-bottom: 1.25rem;
+}
+
+.track-card__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  font-size: 0.9rem;
+  color: #a8b5ff;
+}
+
+.track-card__tag {
+  padding: 0.45rem 0.85rem;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+}
+
+@media (max-width: 768px) {
+  .track-section {
+    padding: 3rem 0.75rem;
+  }
+
+  .track-section__header {
+    align-items: stretch;
+  }
+
+  .track-card {
+    padding: 1.5rem;
+  }
+}

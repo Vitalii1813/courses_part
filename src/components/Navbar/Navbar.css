@@ -1,0 +1,76 @@
+/* Навігаційна панель */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #0b1120 0%, #16213a 100%);
+  color: #ffffff;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Контейнер для логотипу та теглайну */
+.logo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+/* Назва бренду */
+.brand {
+  font-size: 1.15rem;
+  color: #f8fafc;
+}
+
+/* Підпис/теглайн */
+.tagline {
+  font-size: 0.75rem;
+  color: #94a3b8;
+}
+
+/* Список посилань */
+.nav-list {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Елемент посилання */
+.nav-link {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 180ms ease;
+}
+
+/* Ефект наведення на посилання */
+.nav-link:hover {
+  color: #ffffff;
+}
+
+/* Кнопка із закликом до дії (CTA) */
+.cta-button {
+  padding: 0.75rem 1.35rem;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  background: rgba(255, 255, 255, 0.08);
+  color: #f8fafc;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 180ms ease, transform 180ms ease;
+}
+
+/* Опціонально: додано легкий ефект для кнопки при наведенні, 
+   щоб вона інтерактивно відгукувалася */
+.cta-button:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-1px);
+}

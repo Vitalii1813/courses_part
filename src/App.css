@@ -1,0 +1,281 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary-accent: #6c5ce7; /* Фіолетовий технологічний */
+  --secondary-accent: #00cec9; /* Бірюзовий */
+  --dark-space: #1e272e;
+  --light-gray: #f5f6fa;
+  --white: #ffffff;
+}
+
+body {
+  color: #2f3640;
+  background-color: var(--white);
+}
+
+/* Hero Section */
+.edu-hero {
+  background: linear-gradient(135deg, rgba(30, 39, 46, 0.9), rgba(108, 92, 231, 0.7)),
+              url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-overlay h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin-bottom: 15px;
+}
+
+.hero-overlay p {
+  font-size: 1.3rem;
+  max-width: 600px;
+  margin: 0 auto 25px;
+  opacity: 0.9;
+}
+
+.explore-btn {
+  display: inline-block;
+  background-color: var(--secondary-accent);
+  color: var(--dark-space);
+  padding: 14px 28px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 700;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.explore-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 206, 201, 0.4);
+}
+
+/* Навігація */
+.edu-nav {
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 18px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  z-index: 1000;
+}
+
+.edu-nav a {
+  text-decoration: none;
+  color: var(--dark-space);
+  font-weight: 600;
+  font-size: 1.05rem;
+  transition: color 0.2s;
+}
+
+.edu-nav a:hover {
+  color: var(--primary-accent);
+}
+
+/* Секції */
+.edu-section {
+  padding: 80px 20px;
+  max-width: 1140px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.edu-section h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: var(--dark-space);
+}
+
+.bg-dark {
+  background-color: var(--dark-space);
+  color: var(--white);
+  max-width: 100%;
+}
+
+.bg-dark h2 {
+  color: var(--white);
+}
+
+/* Адаптивна сітка для трьох сфер */
+.tracks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.track-card {
+  background: var(--white);
+  border: 1px solid #e1e8ed;
+  border-radius: 16px;
+  padding: 35px 25px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.02);
+  transition: all 0.3s ease;
+}
+
+.track-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(108, 92, 231, 0.1);
+  border-color: var(--primary-accent);
+}
+
+.track-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.track-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: var(--dark-space);
+}
+
+.track-card p {
+  font-size: 1rem;
+  color: #636e72;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.topic-list {
+  list-style: none;
+  margin-bottom: 25px;
+  flex-grow: 1;
+}
+
+.topic-list li {
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.track-btn {
+  display: block;
+  text-align: center;
+  background-color: var(--light-gray);
+  color: var(--dark-space);
+  padding: 12px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.track-card:hover .track-btn {
+  background-color: var(--primary-accent);
+  color: var(--white);
+}
+
+/* Про нас / Опис */
+.about-content {
+  max-width: 750px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  opacity: 0.9;
+}
+
+.highlight {
+  margin-top: 20px;
+  color: var(--secondary-accent);
+  font-weight: 600;
+}
+
+/* Форма реєстрації */
+.edu-form-wrapper {
+  max-width: 550px;
+  margin: 0 auto;
+  background-color: var(--light-gray);
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.edu-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.edu-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: var(--dark-space);
+}
+
+.edu-group input, .edu-group select {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: var(--white);
+}
+
+.edu-group input:focus, .edu-group select:focus {
+  outline: none;
+  border-color: var(--primary-accent);
+  box-shadow: 0 0 0 3px rgba(108, 92, 231, 0.1);
+}
+
+.submit-edu-btn {
+  width: 100%;
+  background-color: var(--primary-accent);
+  color: var(--white);
+  border: none;
+  padding: 16px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.submit-edu-btn:hover {
+  background-color: #5b4bc4;
+}
+
+/* Футер */
+.edu-footer {
+  background-color: #11171a;
+  color: #7f8c8d;
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 0.95rem;
+}
+
+.edu-footer p {
+  margin-bottom: 8px;
+}
+
+/* Мобільна адаптивність */
+@media (max-width: 600px) {
+  .hero-overlay h1 {
+    font-size: 2.4rem;
+  }
+  .edu-nav {
+    gap: 15px;
+    font-size: 0.9rem;
+  }
+  .edu-section {
+    padding: 50px 15px;
+  }
+}
